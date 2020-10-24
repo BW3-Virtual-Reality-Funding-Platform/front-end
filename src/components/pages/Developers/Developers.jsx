@@ -4,7 +4,7 @@ import Navbar from '../../NavBar'
 
 
 
-const DisplayDevelopers = (developers) => (
+const DisplayDevelopers = (developers) => ( 
   
   <div className='developers-container'>
   <Navbar />  
