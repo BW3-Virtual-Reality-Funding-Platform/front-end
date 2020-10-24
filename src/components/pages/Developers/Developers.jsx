@@ -1,17 +1,22 @@
 import React from 'react'
 import '../../../styles/Developers.css'
+import Navbar from '../../NavBar'
 
 
 
 const DisplayDevelopers = (developers) => (
-
+  
   <div className='developers-container'>
+  <Navbar />  
    <div className='dev-page'>
       <h3 className='page-title'>Meet the Developers</h3>
     <div className='display-cards'>
+      
        {
           developers.map((developer, index) => {
             return(    
+            
+            
             <div key={index} className='devCard'>
               <img src={developer.pictureUrl} alt={`${developer.name}'s GitHub avatar`} className='card-img'/>
               <div  className='dev-info'>
@@ -23,6 +28,7 @@ const DisplayDevelopers = (developers) => (
                 </div>
               </div>
             </div>
+           
             )
           })
         }
